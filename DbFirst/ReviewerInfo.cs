@@ -15,7 +15,7 @@ namespace DbFirst
     public partial class ReviewerInfo
     {
         public int reviewerId { get; set; }
-        public int restaurauntId { get; set; }
+        public int RestaurantId { get; set; }
         public string ReviewerName { get; set; }
         public int Rating { get; set; }
         public System.DateTime Date { get; set; }

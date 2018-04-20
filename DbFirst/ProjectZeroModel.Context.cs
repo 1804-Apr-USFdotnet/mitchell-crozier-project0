@@ -9,6 +9,7 @@
 
 namespace DbFirst
 {
+    using Constants;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
@@ -18,6 +19,17 @@ namespace DbFirst
         public ProjectZeroDbContext()
             : base("name=ProjectZeroDbContext")
         {
+            String pass = null;
+            try
+            {
+                pass = System.IO.File.ReadAllText(@"C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\password.txt");
+
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("You've goofed, place a file containing the password in the directory and change the ReadAllText method in ProjectZeroModel.Context.cs");
+            }
+            Database.Connection.ConnectionString = Database.Connection.ConnectionString.Replace("XXXXX", pass);
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -25,7 +37,7 @@ namespace DbFirst
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<RestaurantInfo> RestaurantInfoes { get; set; }
-        public virtual DbSet<ReviewerInfo> ReviewerInfoes { get; set; }
+        public virtual DbSet<RestaurantInfo> RestaurantInfos { get; set; }
+        public virtual DbSet<ReviewerInfo> ReviewerInfos { get; set; }
     }
 }

@@ -7,10 +7,10 @@
       <Schema Namespace="ProjectZeroModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="RestaurantInfo">
           <Key>
-            <PropertyRef Name="restaurauntId" />
+            <PropertyRef Name="RestaurantId" />
           </Key>
-          <Property Name="restaurauntId" Type="int" Nullable="false" />
-          <Property Name="RestaurauntName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RestaurantId" Type="int" Nullable="false" />
+          <Property Name="RestaurantName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Street" Type="nvarchar" MaxLength="50" />
           <Property Name="Description" Type="nvarchar" MaxLength="350" />
@@ -20,7 +20,7 @@
             <PropertyRef Name="reviewerId" />
           </Key>
           <Property Name="reviewerId" Type="int" Nullable="false" />
-          <Property Name="restaurauntId" Type="int" Nullable="false" />
+          <Property Name="RestaurantId" Type="int" Nullable="false" />
           <Property Name="ReviewerName" Type="nvarchar" MaxLength="50" />
           <Property Name="Rating" Type="int" Nullable="false" />
           <Property Name="Date" Type="datetime2" Precision="7" Nullable="false" />
@@ -30,10 +30,10 @@
           <End Role="ReviewerInfo" Type="Self.ReviewerInfo" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="RestaurantInfo">
-              <PropertyRef Name="restaurauntId" />
+              <PropertyRef Name="RestaurantId" />
             </Principal>
             <Dependent Role="ReviewerInfo">
-              <PropertyRef Name="restaurauntId" />
+              <PropertyRef Name="RestaurantId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -52,10 +52,10 @@
       <Schema Namespace="ProjectZeroModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="RestaurantInfo">
           <Key>
-            <PropertyRef Name="restaurauntId" />
+            <PropertyRef Name="RestaurantId" />
           </Key>
-          <Property Name="restaurauntId" Type="Int32" Nullable="false" />
-          <Property Name="RestaurauntName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RestaurantId" Type="Int32" Nullable="false" />
+          <Property Name="RestaurantName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Description" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
@@ -66,7 +66,7 @@
             <PropertyRef Name="reviewerId" />
           </Key>
           <Property Name="reviewerId" Type="Int32" Nullable="false" />
-          <Property Name="restaurauntId" Type="Int32" Nullable="false" />
+          <Property Name="RestaurantId" Type="Int32" Nullable="false" />
           <Property Name="ReviewerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Rating" Type="Int32" Nullable="false" />
           <Property Name="Date" Type="DateTime" Nullable="false" Precision="7" />
@@ -77,10 +77,10 @@
           <End Role="ReviewerInfo" Type="Self.ReviewerInfo" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="RestaurantInfo">
-              <PropertyRef Name="restaurauntId" />
+              <PropertyRef Name="RestaurantId" />
             </Principal>
             <Dependent Role="ReviewerInfo">
-              <PropertyRef Name="restaurauntId" />
+              <PropertyRef Name="RestaurantId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -101,8 +101,8 @@
           <EntitySetMapping Name="RestaurantInfoes">
             <EntityTypeMapping TypeName="ProjectZeroModel.RestaurantInfo">
               <MappingFragment StoreEntitySet="RestaurantInfo">
-                <ScalarProperty Name="restaurauntId" ColumnName="restaurauntId" />
-                <ScalarProperty Name="RestaurauntName" ColumnName="RestaurauntName" />
+                <ScalarProperty Name="RestaurantId" ColumnName="RestaurantId" />
+                <ScalarProperty Name="RestaurantName" ColumnName="RestaurantName" />
                 <ScalarProperty Name="City" ColumnName="City" />
                 <ScalarProperty Name="Street" ColumnName="Street" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
@@ -113,7 +113,7 @@
             <EntityTypeMapping TypeName="ProjectZeroModel.ReviewerInfo">
               <MappingFragment StoreEntitySet="ReviewerInfo">
                 <ScalarProperty Name="reviewerId" ColumnName="reviewerId" />
-                <ScalarProperty Name="restaurauntId" ColumnName="restaurauntId" />
+                <ScalarProperty Name="RestaurantId" ColumnName="RestaurantId" />
                 <ScalarProperty Name="ReviewerName" ColumnName="ReviewerName" />
                 <ScalarProperty Name="Rating" ColumnName="Rating" />
                 <ScalarProperty Name="Date" ColumnName="Date" />

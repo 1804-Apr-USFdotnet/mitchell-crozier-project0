@@ -17,16 +17,16 @@ namespace DbFirst
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public RestaurantInfo()
         {
-            this.ReviewerInfoes = new HashSet<ReviewerInfo>();
+            this.ReviewerInfos = new HashSet<ReviewerInfo>();
         }
     
-        public int restaurauntId { get; set; }
-        public string RestaurauntName { get; set; }
+        public int RestaurantId { get; set; }
+        public string RestaurantName { get; set; }
         public string City { get; set; }
         public string Street { get; set; }
         public string Description { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ReviewerInfo> ReviewerInfoes { get; set; }
+        public virtual ICollection<ReviewerInfo> ReviewerInfos { get; set; }
     }
 }

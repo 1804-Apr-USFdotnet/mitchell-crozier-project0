@@ -55,12 +55,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectZeroModel.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProjectZeroModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectZeroModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ProjectZeroModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectZeroModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestaurantInfo.cs">
+      <DependentUpon>ProjectZeroModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewerInfo.cs">
+      <DependentUpon>ProjectZeroModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="ProjectZeroModel.edmx">
@@ -76,13 +87,26 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="password.txt" />
     <Content Include="ProjectZeroModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ProjectZeroModel.Context.cs</LastGenOutput>
+      <DependentUpon>ProjectZeroModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="ProjectZeroModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectZeroModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectZeroModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Constants\Constants.csproj">
+      <Project>{C95FF216-6F23-401B-AD6F-0B2A8D64554B}</Project>
+      <Name>Constants</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
