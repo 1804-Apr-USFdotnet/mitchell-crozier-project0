@@ -1,0 +1,5 @@
+C:\Users\Raptor\source\repos\CodingChallenge1\Palindrome\bin\Debug\Palindrome.dll
+C:\Users\Raptor\source\repos\CodingChallenge1\Palindrome\bin\Debug\Palindrome.pdb
+C:\Users\Raptor\source\repos\CodingChallenge1\Palindrome\obj\Debug\Palindrome.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\CodingChallenge1\Palindrome\obj\Debug\Palindrome.dll
+C:\Users\Raptor\source\repos\CodingChallenge1\Palindrome\obj\Debug\Palindrome.pdb

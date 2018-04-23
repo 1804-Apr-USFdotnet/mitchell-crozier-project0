@@ -1,0 +1,7 @@
+C:\Users\Raptor\source\repos\CodingChallenge1\CodingChallenge1\bin\Debug\CodingChallenge1.exe.config
+C:\Users\Raptor\source\repos\CodingChallenge1\CodingChallenge1\bin\Debug\CodingChallenge1.exe
+C:\Users\Raptor\source\repos\CodingChallenge1\CodingChallenge1\bin\Debug\CodingChallenge1.pdb
+C:\Users\Raptor\source\repos\CodingChallenge1\CodingChallenge1\obj\Debug\CodingChallenge1.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\CodingChallenge1\CodingChallenge1\obj\Debug\CodingChallenge1.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\CodingChallenge1\CodingChallenge1\obj\Debug\CodingChallenge1.exe
+C:\Users\Raptor\source\repos\CodingChallenge1\CodingChallenge1\obj\Debug\CodingChallenge1.pdb
