@@ -1,0 +1,11 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\obj\Release\DbFirst.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\bin\Release\DbFirst.dll.config
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\bin\Release\DbFirst.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\bin\Release\DbFirst.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\bin\Release\EntityFramework.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\bin\Release\EntityFramework.xml
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\obj\Release\DbFirst.csproj.CopyComplete
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\obj\Release\DbFirst.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\obj\Release\DbFirst.pdb

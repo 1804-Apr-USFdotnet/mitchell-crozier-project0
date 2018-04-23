@@ -1,0 +1,5 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\Test\bin\Test\Test.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Test\bin\Test\Test.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Test\obj\Test\Test.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Test\obj\Test\Test.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Test\obj\Test\Test.pdb

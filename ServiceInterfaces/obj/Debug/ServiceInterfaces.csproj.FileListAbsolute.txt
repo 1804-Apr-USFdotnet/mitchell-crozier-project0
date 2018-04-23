@@ -1,0 +1,12 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\obj\Debug\ServiceInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\bin\Debug\ServiceInterfaces.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\bin\Debug\ServiceInterfaces.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\bin\Debug\DbFirst.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\bin\Debug\EntityFramework.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\bin\Debug\DbFirst.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\bin\Debug\DbFirst.dll.config
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\bin\Debug\EntityFramework.xml
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\obj\Debug\ServiceInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\obj\Debug\ServiceInterfaces.csproj.CopyComplete
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\obj\Debug\ServiceInterfaces.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\obj\Debug\ServiceInterfaces.pdb

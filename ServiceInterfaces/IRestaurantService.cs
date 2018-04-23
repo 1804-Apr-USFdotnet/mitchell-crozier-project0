@@ -9,7 +9,7 @@ namespace ServiceInterfaces
 {
     public interface IRestaurantService
     {
-        List<RestaurantInfo> GetAllRestaurantInfo();
+          List<RestaurantInfo> GetAllRestaurantInfo();
 
     }
 }

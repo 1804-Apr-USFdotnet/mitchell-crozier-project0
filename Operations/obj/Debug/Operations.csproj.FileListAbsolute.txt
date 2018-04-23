@@ -1,0 +1,5 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\Operations.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\Operations.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.pdb

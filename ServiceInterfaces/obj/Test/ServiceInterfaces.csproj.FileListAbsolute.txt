@@ -1,0 +1,1 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\ServiceInterfaces\obj\Test\ServiceInterfaces.csproj.CoreCompileInputs.cache

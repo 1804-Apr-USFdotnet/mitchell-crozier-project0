@@ -8,7 +8,7 @@ using ServiceInterfaces;
 
 namespace Services
 {
-    class LoggingService : ILoggingService
+    public class LoggingService : ILoggingService
     {
         private ILogger nlogger = LogManager.GetCurrentClassLogger();
         public LoggingService()

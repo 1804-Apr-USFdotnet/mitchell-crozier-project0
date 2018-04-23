@@ -1,0 +1,2 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\obj\Test\DbFirst.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\DbFirst\obj\Test\DbFirst.csproj.CoreCompileInputs.cache

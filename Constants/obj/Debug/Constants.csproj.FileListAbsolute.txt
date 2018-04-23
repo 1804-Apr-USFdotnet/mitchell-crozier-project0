@@ -1,0 +1,2 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\Constants\obj\Debug\Constants.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Constants\obj\Debug\Constants.csproj.CoreCompileInputs.cache

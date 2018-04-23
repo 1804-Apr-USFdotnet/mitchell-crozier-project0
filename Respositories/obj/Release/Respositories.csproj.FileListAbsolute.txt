@@ -1,0 +1,17 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\obj\Release\Respositories.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\obj\Release\Respositories.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\Respositories.dll.config
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\Respositories.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\Respositories.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\DbFirst.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\EntityFramework.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\RepositoryInterfaces.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\DbFirst.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\DbFirst.dll.config
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\RepositoryInterfaces.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\EntityFramework.xml
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\obj\Release\Respositories.csproj.CopyComplete
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\obj\Release\Respositories.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Respositories\obj\Release\Respositories.pdb

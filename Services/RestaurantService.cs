@@ -1,4 +1,5 @@
 ﻿using DbFirst;
+using RepositoryInterfaces;
 using ServiceInterfaces;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,15 @@ namespace Services
 {
     public class RestaurantService : IRestaurantService
     {
-        List<RestaurantInfo> GetAllRestaurantInfo()
-        {
+        private IRestaurantRepository restaurantRepository;
 
+        public RestaurantService(IRestaurantRepository repository)
+        {
+            restaurantRepository = repository;
+        }
+        public List<RestaurantInfo> GetAllRestaurantInfo()
+        {
+            return restaurantRepository.getAll().ToList();
         }
     }
 }

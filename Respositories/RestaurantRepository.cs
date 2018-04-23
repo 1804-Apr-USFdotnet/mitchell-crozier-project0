@@ -19,7 +19,7 @@ namespace Respositories
 
         public IEnumerable<RestaurantInfo> getAll()
         {
-            return context.RestaurantInfos;
+            return context.RestaurantInfoes;
         }
     }
 }

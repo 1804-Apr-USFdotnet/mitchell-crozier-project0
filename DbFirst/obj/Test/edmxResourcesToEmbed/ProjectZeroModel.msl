@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectZeroModelStoreContainer" CdmEntityContainer="ProjectZeroDbContext">
+    <EntitySetMapping Name="RestaurantInfoes">
+      <EntityTypeMapping TypeName="ProjectZeroModel.RestaurantInfo">
+        <MappingFragment StoreEntitySet="RestaurantInfo">
+          <ScalarProperty Name="RestaurantId" ColumnName="RestaurantId" />
+          <ScalarProperty Name="RestaurantName" ColumnName="RestaurantName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReviewerInfoes">
+      <EntityTypeMapping TypeName="ProjectZeroModel.ReviewerInfo">
+        <MappingFragment StoreEntitySet="ReviewerInfo">
+          <ScalarProperty Name="reviewerId" ColumnName="reviewerId" />
+          <ScalarProperty Name="RestaurantId" ColumnName="RestaurantId" />
+          <ScalarProperty Name="ReviewerName" ColumnName="ReviewerName" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

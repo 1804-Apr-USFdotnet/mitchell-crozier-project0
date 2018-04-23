@@ -1,0 +1,2 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\RepositoryInterfaces\obj\Test\RepositoryInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\RepositoryInterfaces\obj\Test\RepositoryInterfaces.csproj.CoreCompileInputs.cache

@@ -1,0 +1,6 @@
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Test\Operations.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Test\Operations.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Test\Operations.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Test\Operations.csproj.CoreCompileInputs.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Test\Operations.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Test\Operations.pdb

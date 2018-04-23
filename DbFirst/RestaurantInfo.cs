@@ -17,7 +17,7 @@ namespace DbFirst
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public RestaurantInfo()
         {
-            this.ReviewerInfos = new HashSet<ReviewerInfo>();
+            this.ReviewerInfoes = new HashSet<ReviewerInfo>();
         }
     
         public int RestaurantId { get; set; }
@@ -27,6 +27,6 @@ namespace DbFirst
         public string Description { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ReviewerInfo> ReviewerInfos { get; set; }
+        public virtual ICollection<ReviewerInfo> ReviewerInfoes { get; set; }
     }
 }

@@ -29,6 +29,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.4.5.3\lib\net45\NLog.dll</HintPath>
@@ -64,6 +73,10 @@
     <ProjectReference Include="..\DbFirst\DbFirst.csproj">
       <Project>{EE0C3147-30B0-4B40-8E20-B4EF5128304A}</Project>
       <Name>DbFirst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepositoryInterfaces\RepositoryInterfaces.csproj">
+      <Project>{764C6C9D-DE95-495A-A143-8B2C5BC39AFC}</Project>
+      <Name>RepositoryInterfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\ServiceInterfaces\ServiceInterfaces.csproj">
       <Project>{A096A878-CB65-4DCB-8806-1663EA0E9686}</Project>
