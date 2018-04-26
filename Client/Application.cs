@@ -67,7 +67,7 @@ namespace Client
                         //AllReviewsOfARestaurant();
                         break;
                     case 7:
-                        //Search();
+                        Search();
                         break;
                     case 8:
                         //Quit();
@@ -94,6 +94,14 @@ namespace Client
         {
             Console.WriteLine("Top three rated \n");
             var results = restaurantService.TopThreeRatedRestaurants();
+            inOut.Output(results);
+        }
+
+        private void Search()
+        {
+            Console.WriteLine("Search for a restaurant \n");
+            string name = Console.ReadLine();
+            var results = restaurantService.SearchByName(name);
             inOut.Output(results);
         }
                 

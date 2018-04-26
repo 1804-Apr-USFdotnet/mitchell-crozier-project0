@@ -35,6 +35,14 @@ namespace Services
             
             return results;
         }
+
+        public List<RestaurantInfo> SearchByName(string name)
+        {
+            var restaurants = restaurantRepository.getAll();
+            var search = new SearchRestaurant();
+            var results = search.PartialSearch(name, restaurants);
+            return results;
+        }
     }
 
     

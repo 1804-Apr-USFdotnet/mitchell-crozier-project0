@@ -11,6 +11,7 @@ namespace ServiceInterfaces
     {
         List<RestaurantInfo> GetAllRestaurantInfo();
         Dictionary<RestaurantInfo, double> TopThreeRatedRestaurants();
+        List<RestaurantInfo> SearchByName(string name);
 
     }
 }

@@ -7,11 +7,19 @@ using System.Threading.Tasks;
 
 namespace Operations
 {
-    class SearchRestaurant
+    public class SearchRestaurant
     {
-        public List<RestaurantInfo> PartialSearch(string partialName, IEnumerable<RestaurantInfo> resteraunts)
+        public List<RestaurantInfo> PartialSearch(string partialName, IEnumerable<RestaurantInfo> restaurants)
         {
-            
+            List<RestaurantInfo> results = new List<RestaurantInfo>();
+            foreach (var restaurant in restaurants)
+            {
+                if (restaurant.RestaurantName.Contains(partialName))
+                {
+                    results.Add(restaurant);
+                }
+            }
+            return results;
         }
     }
 }
