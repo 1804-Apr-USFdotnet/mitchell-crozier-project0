@@ -9,7 +9,7 @@ namespace Operations
 {
     public class AllReviewsSingleRestauraunt
     {
-        public Dictionary<ReviewerInfo, RestaurantInfo> GetAllReviews(string name, IEnumerable<RestaurantInfo> restaurants, IEnumerable<ReviewerInfo> reviews)
+        public Dictionary<ReviewerInfo, RestaurantInfo> GetAllReviews(string name, List<RestaurantInfo> restaurants, IEnumerable<ReviewerInfo> reviews)
         {
             Dictionary<ReviewerInfo, RestaurantInfo> results = new Dictionary<ReviewerInfo, RestaurantInfo>();
             int count = 0;

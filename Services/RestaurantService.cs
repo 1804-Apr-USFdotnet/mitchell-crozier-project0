@@ -46,7 +46,7 @@ namespace Services
 
         public Dictionary<ReviewerInfo, RestaurantInfo> AllReviewsForARestauraunt(string name)
         {
-            var restaurants = restaurantRepository.getAll();
+            var restaurants = SearchByName(name);
             var reviews = reviewerRepository.getAll();
             var allReviews = new AllReviewsSingleRestauraunt();
             return allReviews.GetAllReviews(name, restaurants, reviews);
