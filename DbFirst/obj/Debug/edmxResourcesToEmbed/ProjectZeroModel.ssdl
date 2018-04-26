@@ -16,7 +16,7 @@
       <PropertyRef Name="reviewerId" />
     </Key>
     <Property Name="reviewerId" Type="int" Nullable="false" />
-    <Property Name="restaurauntId" Type="int" Nullable="false" />
+    <Property Name="restaurantId" Type="int" Nullable="false" />
     <Property Name="ReviewerName" Type="nvarchar" MaxLength="50" />
     <Property Name="Rating" Type="int" Nullable="false" />
     <Property Name="Date" Type="datetime2" Precision="7" Nullable="false" />
@@ -29,7 +29,7 @@
         <PropertyRef Name="restaurantId" />
       </Principal>
       <Dependent Role="ReviewerInfo">
-        <PropertyRef Name="restaurauntId" />
+        <PropertyRef Name="restaurantId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

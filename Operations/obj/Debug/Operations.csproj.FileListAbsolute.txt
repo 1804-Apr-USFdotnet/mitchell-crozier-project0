@@ -4,3 +4,9 @@ C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations
 C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.dll
 C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.pdb
 C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.csprojResolveAssemblyReference.cache
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\DbFirst.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\EntityFramework.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\DbFirst.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\DbFirst.dll.config
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\EntityFramework.xml
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.csproj.CopyComplete

@@ -4,23 +4,23 @@
     <EntitySetMapping Name="RestaurantInfoes">
       <EntityTypeMapping TypeName="ProjectZeroModel.RestaurantInfo">
         <MappingFragment StoreEntitySet="RestaurantInfo">
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Street" ColumnName="Street" />
-          <ScalarProperty Name="City" ColumnName="City" />
-          <ScalarProperty Name="RestaurantName" ColumnName="RestaurantName" />
           <ScalarProperty Name="restaurantId" ColumnName="restaurantId" />
+          <ScalarProperty Name="RestaurantName" ColumnName="RestaurantName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ReviewerInfoes">
       <EntityTypeMapping TypeName="ProjectZeroModel.ReviewerInfo">
         <MappingFragment StoreEntitySet="ReviewerInfo">
-          <ScalarProperty Name="Date" ColumnName="Date" />
-          <ScalarProperty Name="Rating" ColumnName="Rating" />
-          <ScalarProperty Name="ReviewerName" ColumnName="ReviewerName" />
-          <ScalarProperty Name="restaurauntId" ColumnName="restaurauntId" />
           <ScalarProperty Name="reviewerId" ColumnName="reviewerId" />
+          <ScalarProperty Name="restaurantId" ColumnName="restaurantId" />
+          <ScalarProperty Name="ReviewerName" ColumnName="ReviewerName" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
