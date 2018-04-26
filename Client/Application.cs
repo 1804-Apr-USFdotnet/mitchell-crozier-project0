@@ -121,7 +121,7 @@ namespace Client
             }
             if(multipleLocations)
             {                
-                inOut.Output(restaurantList.Select(rest => rest.restaurantId).Distinct());
+                inOut.Output(restaurantList.Select(rest => rest).Distinct());
                 Console.WriteLine("There is more than one location for the restauraunt you entered!\nInput the id number for the restaurant you wish to select:\n");
                 int input = Convert.ToInt32(Console.ReadLine());
                 foreach (var review in results.Keys.ToList())
