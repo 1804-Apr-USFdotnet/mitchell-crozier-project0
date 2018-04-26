@@ -16,5 +16,8 @@ namespace Client
         void Output(IEnumerable<RestaurantInfo> restaurants);
         void Output(Dictionary<RestaurantInfo, double> restaurants);
         void Output(IEnumerable<string> stringList);
+        void Output(IEnumerable<int> intList);
+        void Output(IEnumerable<ReviewerInfo> reviews);
+        void Output(ReviewerInfo review);
     }
 }

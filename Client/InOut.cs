@@ -24,6 +24,17 @@ namespace Client
                 Console.WriteLine(item.Key.RestaurantName + " " + item.Value);
             }
         }
+        public void Output(IEnumerable<ReviewerInfo> reviews)
+        {
+            foreach (var review in reviews)
+            {
+                Console.WriteLine(review);
+            }
+        }
+        public void Output(ReviewerInfo review)
+        {
+            Console.WriteLine(review);
+        }
         public string ReadString()
         {
             return System.Console.ReadLine();
@@ -47,6 +58,13 @@ namespace Client
         public void Output(IEnumerable<string> stringList)
         {
             foreach (var i in stringList)
+            {
+                System.Console.WriteLine(i);
+            }
+        }
+        public void Output(IEnumerable<int> intList)
+        {
+            foreach (var i in intList)
             {
                 System.Console.WriteLine(i);
             }

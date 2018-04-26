@@ -43,6 +43,16 @@ namespace Services
             var results = search.PartialSearch(name, restaurants);
             return results;
         }
+
+        public Dictionary<ReviewerInfo, RestaurantInfo> AllReviewsForARestauraunt(string name)
+        {
+            var restaurants = restaurantRepository.getAll();
+            var reviews = reviewerRepository.getAll();
+            var allReviews = new AllReviewsSingleRestauraunt();
+            return allReviews.GetAllReviews(name, restaurants, reviews);
+            
+
+        }
     }
 
     

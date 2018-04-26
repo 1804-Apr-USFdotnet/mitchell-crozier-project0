@@ -19,7 +19,12 @@ namespace DbFirst
         public string ReviewerName { get; set; }
         public int Rating { get; set; }
         public System.DateTime Date { get; set; }
-    
+
+        public override string ToString()
+        {
+            return $"\nreviewerId: {reviewerId}\nName: {ReviewerName} \nRating: {Rating}\nDate: {Date}";
+        }
+
         public virtual RestaurantInfo RestaurantInfo { get; set; }
     }
 }

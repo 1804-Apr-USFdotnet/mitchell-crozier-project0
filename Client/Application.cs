@@ -64,7 +64,7 @@ namespace Client
                         //ViewRestaurantDetails();
                         break;
                     case 6:
-                        //AllReviewsOfARestaurant();
+                        AllReviewsForARestaurant();
                         break;
                     case 7:
                         Search();
@@ -99,12 +99,48 @@ namespace Client
 
         private void Search()
         {
-            Console.WriteLine("Search for a restaurant \n");
+            Console.WriteLine("Search for a restaurant \nEnter a full or partial restaurant name:  ");
             string name = Console.ReadLine();
             var results = restaurantService.SearchByName(name);
             inOut.Output(results);
         }
-                
+        private void AllReviewsForARestaurant()
+        {
+            Console.WriteLine("All reviews for a restaurant \nEnter the full restaurant name");
+            string name = Console.ReadLine();
+            var results = restaurantService.AllReviewsForARestauraunt(name);
+            var restaurantList = results.Values.ToList();
+            int restId = restaurantList[0].restaurantId;
+            bool multipleLocations = false;
+            foreach (var restaurant in restaurantList)
+            {
+                if(restaurant.restaurantId != restId)
+                {
+                    multipleLocations = true;
+                }
+            }
+            if(multipleLocations)
+            {                
+                inOut.Output(restaurantList.Select(rest => rest.restaurantId).Distinct());
+                Console.WriteLine("There is more than one location for the restauraunt you entered!\nInput the id number for the restaurant you wish to select:\n");
+                int input = Convert.ToInt32(Console.ReadLine());
+                foreach (var review in results.Keys.ToList())
+                {
+                    if(input == review.restaurantId)
+                    {                             
+                        inOut.Output(review);
+                    }
+                }
+
+            } else 
+            {
+                foreach (var review in results.Keys.ToList())
+                {
+                    inOut.Output(review);
+                }
+            }
+           
+        }              
 
 
 
