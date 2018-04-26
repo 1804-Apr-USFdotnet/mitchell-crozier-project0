@@ -83,14 +83,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
     <EntityDeploy Include="ProjectZeroModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ProjectZeroModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="packages.config" />
     <None Include="ProjectZeroModel.edmx.diagram">
       <DependentUpon>ProjectZeroModel.edmx</DependentUpon>
     </None>
@@ -99,8 +97,8 @@
     <Content Include="password.txt" />
     <Content Include="ProjectZeroModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ProjectZeroModel.Context.cs</LastGenOutput>
       <DependentUpon>ProjectZeroModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectZeroModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="ProjectZeroModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

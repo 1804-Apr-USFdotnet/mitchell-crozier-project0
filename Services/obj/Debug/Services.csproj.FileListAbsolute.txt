@@ -16,3 +16,5 @@ C:\Users\Raptor\source\repos\MitchellProjectZero\Services\bin\Debug\EntityFramew
 C:\Users\Raptor\source\repos\MitchellProjectZero\Services\obj\Debug\Services.csproj.CopyComplete
 C:\Users\Raptor\source\repos\MitchellProjectZero\Services\obj\Debug\Services.dll
 C:\Users\Raptor\source\repos\MitchellProjectZero\Services\obj\Debug\Services.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Services\bin\Debug\Operations.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Services\bin\Debug\Operations.pdb

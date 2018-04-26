@@ -26,3 +26,5 @@ C:\Users\Raptor\source\repos\MitchellProjectZero\Client\obj\Debug\Client.exe
 C:\Users\Raptor\source\repos\MitchellProjectZero\Client\obj\Debug\Client.pdb
 C:\Users\Raptor\source\repos\MitchellProjectZero\Client\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Raptor\source\repos\MitchellProjectZero\Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Raptor\source\repos\MitchellProjectZero\Client\bin\Debug\Operations.dll
+C:\Users\Raptor\source\repos\MitchellProjectZero\Client\bin\Debug\Operations.pdb

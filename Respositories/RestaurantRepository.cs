@@ -21,5 +21,12 @@ namespace Respositories
         {
             return context.RestaurantInfoes;
         }
+        public List<int> ConvertNameIntoId(string restaurantName)
+        {
+            var ids = context.RestaurantInfoes.Where(x => x.RestaurantName == restaurantName).Select(r => r.restaurantId).ToList();
+            return ids;
+        }
+
+
     }
 }

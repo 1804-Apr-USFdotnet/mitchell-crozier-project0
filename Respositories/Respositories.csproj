@@ -59,6 +59,7 @@
     <Compile Include="RestaurantContext.cs" />
     <Compile Include="RestaurantRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewerRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DbFirst\DbFirst.csproj">

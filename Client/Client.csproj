@@ -67,6 +67,8 @@
     <Compile Include="FrontEnd.cs" />
     <Compile Include="IApplication.cs" />
     <Compile Include="IFrontEnd.cs" />
+    <Compile Include="IInOut.cs" />
+    <Compile Include="InOut.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +80,10 @@
     <ProjectReference Include="..\DbFirst\DbFirst.csproj">
       <Project>{EE0C3147-30B0-4B40-8E20-B4EF5128304A}</Project>
       <Name>DbFirst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Operations\Operations.csproj">
+      <Project>{3CCD60B8-88D3-4AB4-8609-D7760354C4FF}</Project>
+      <Name>Operations</Name>
     </ProjectReference>
     <ProjectReference Include="..\RepositoryInterfaces\RepositoryInterfaces.csproj">
       <Project>{764C6C9D-DE95-495A-A143-8B2C5BC39AFC}</Project>

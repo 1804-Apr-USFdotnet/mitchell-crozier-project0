@@ -1,4 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="ProjectZeroModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityContainer Name="ProjectZeroModelStoreContainer" />
+<Schema Namespace="ProjectZeroModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="RestaurantInfo">
+    <Key>
+      <PropertyRef Name="restaurantId" />
+    </Key>
+    <Property Name="restaurantId" Type="int" Nullable="false" />
+    <Property Name="RestaurantName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Street" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="350" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ReviewerInfo">
+    <Key>
+      <PropertyRef Name="reviewerId" />
+    </Key>
+    <Property Name="reviewerId" Type="int" Nullable="false" />
+    <Property Name="restaurauntId" Type="int" Nullable="false" />
+    <Property Name="ReviewerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rating" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ReviewerInfo_RestaurantInfo1">
+    <End Role="RestaurantInfo" Type="Self.RestaurantInfo" Multiplicity="1" />
+    <End Role="ReviewerInfo" Type="Self.ReviewerInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RestaurantInfo">
+        <PropertyRef Name="restaurantId" />
+      </Principal>
+      <Dependent Role="ReviewerInfo">
+        <PropertyRef Name="restaurauntId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProjectZeroModelStoreContainer">
+    <EntitySet Name="RestaurantInfo" EntityType="Self.RestaurantInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReviewerInfo" EntityType="Self.ReviewerInfo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ReviewerInfo_RestaurantInfo1" Association="Self.FK_ReviewerInfo_RestaurantInfo1">
+      <End Role="RestaurantInfo" EntitySet="RestaurantInfo" />
+      <End Role="ReviewerInfo" EntitySet="ReviewerInfo" />
+    </AssociationSet>
+  </EntityContainer>
 </Schema>

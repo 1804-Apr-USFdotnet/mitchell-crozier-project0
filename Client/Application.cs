@@ -1,4 +1,5 @@
-﻿using ServiceInterfaces;
+﻿using Operations;
+using ServiceInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +11,18 @@ namespace Client
     class Application : IApplication
     {
         private IRestaurantService restaurantService;
+        private IReviewService reviewService;
         private ILoggingService loggingService;
+        private IQueries queries;
         private bool isYouFinishedOrIsYouDone;
+        private IInOut inOut;
 
-        public Application(IRestaurantService restaurantService, ILoggingService loggingService)
+        public Application(IRestaurantService restaurantService, IReviewService reviewService, ILoggingService loggingService, IInOut inOut)
         {
             this.restaurantService = restaurantService;
+            this.reviewService = reviewService;
             this.loggingService = loggingService;
+            this.inOut = inOut;
 
         }
 
@@ -52,7 +58,7 @@ namespace Client
                         // ReviewRestaurant();
                         break;
                     case 4:
-                        // TopThreeRatedRestaurants();
+                        TopThreeRatedRestaurants();
                         break;
                     case 5:
                         //ViewRestaurantDetails();
@@ -79,11 +85,18 @@ namespace Client
                     Console.WriteLine("\nAll Restaurants:\n");
 
                     var results = restaurantService.GetAllRestaurantInfo();
-
+                    Console.WriteLine("results are : " + results);
                     var restaurantList = results.Select(x => x.RestaurantName);
 
-                    Console.WriteLine(restaurantList);
+                    inOut.Output(restaurantList);
                 }
+        private void TopThreeRatedRestaurants()
+        {
+            Console.WriteLine("Top three rated \n");
+            var results = restaurantService.TopThreeRatedRestaurants();
+            inOut.Output(results);
+        }
+                
 
 
 

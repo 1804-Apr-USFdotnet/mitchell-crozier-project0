@@ -9,7 +9,8 @@ namespace ServiceInterfaces
 {
     public interface IRestaurantService
     {
-          List<RestaurantInfo> GetAllRestaurantInfo();
+        List<RestaurantInfo> GetAllRestaurantInfo();
+        Dictionary<RestaurantInfo, double> TopThreeRatedRestaurants();
 
     }
 }

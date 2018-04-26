@@ -3,3 +3,4 @@ C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\bin\Debug\Operations
 C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.csproj.CoreCompileInputs.cache
 C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.dll
 C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.pdb
+C:\Users\Raptor\source\repos\MitchellProjectZero\Operations\obj\Debug\Operations.csprojResolveAssemblyReference.cache
