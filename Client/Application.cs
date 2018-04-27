@@ -32,9 +32,9 @@ namespace Client
             {
                 int action = 0;
                 Console.WriteLine($"\nWelcome to Restaurant Reviews, what would you like to do today?" +
-                                    "\n1 - Add A Restaurant\n2 - View All Restaurants\n3 - Review A Restaurant" +
-                                    "\n4 - View Top Three Rated Restaurants\n5 - View Restaurant Details" +
-                                    "\n6 - All Reviews Of A Restaurant\n7 - Search\n8 - Quit");
+                                    "\n1 - View All Restaurants\n2 - View Top Three Rated Restaurants\n3 - All Reviews For a Restaurant" +
+                                    "\n4 - Search\n5 - Quit");
+                                    
                 try
                 {
                     action = Convert.ToInt32(System.Console.ReadLine());
@@ -48,29 +48,21 @@ namespace Client
 
                 switch (action)
                 {
+
                     case 1:
-                        // AddRestaurant();
-                        break;
-                    case 2:
                         ViewAllRestaurants();
                         break;
-                    case 3:
-                        // ReviewRestaurant();
-                        break;
-                    case 4:
+                    case 2:
                         TopThreeRatedRestaurants();
                         break;
-                    case 5:
-                        //ViewRestaurantDetails();
-                        break;
-                    case 6:
+                    case 3:
                         AllReviewsForARestaurant();
                         break;
-                    case 7:
+                    case 4:
                         Search();
                         break;
-                    case 8:
-                        //Quit();
+                    case 5:
+                        Quit();
                         break;
                     default:
                         Console.WriteLine("\nThat is not an option!\n");
@@ -113,8 +105,7 @@ namespace Client
         private void SortIdAscending()
         {
             var results = restaurantService.GetAllRestaurantInfo();
-            Console.WriteLine("results are : " + results);
-            var restaurantList = results.Select(x => x.restaurantId);
+            var restaurantList = results.OrderBy(x => x.restaurantId);
 
             inOut.Output(restaurantList);
         }
@@ -130,7 +121,7 @@ namespace Client
         private void SortNameAscending()
         {
             var results = restaurantService.GetAllRestaurantInfo();
-            var restaurantList = results.Select(x => x.RestaurantName);
+            var restaurantList = results.OrderBy(x => x.RestaurantName);
 
             inOut.Output(restaurantList);
         }
@@ -152,7 +143,7 @@ namespace Client
 
         private void Search()
         {
-            Console.WriteLine("Search for a restaurant \nEnter a full or partial restaurant name:  ");
+            inOut.Output("Search for a restaurant \nEnter a full or partial restaurant name:  ");
             string name = null;
             try
             {
@@ -160,7 +151,7 @@ namespace Client
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Invalid input!");
+                inOut.Output("Invalid input!");
                 loggingService.Log(ex);
             }
             var results = restaurantService.SearchByName(name);
@@ -169,15 +160,15 @@ namespace Client
 
         private void AllReviewsForARestaurant()
         {
-            Console.WriteLine("All reviews for a restaurant \nEnter the full restaurant name");
+            inOut.Output("All reviews for a restaurant \nEnter the full restaurant name");
             string name = null;
             try
             {
-                name = Console.ReadLine();
+                name = inOut.ReadString();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Invalid input!");
+                inOut.Output("Invalid input!");
                 loggingService.Log(ex);
             }
             var results = restaurantService.AllReviewsForARestauraunt(name);
@@ -194,11 +185,11 @@ namespace Client
             if (multipleLocations)
             {
                 inOut.Output(restaurantList.Select(rest => rest).Distinct());
-                Console.WriteLine("There is more than one location for the restauraunt you entered!\nInput the id number for the restaurant you wish to select:\n");
+                inOut.Output("There is more than one location for the restauraunt you entered!\nInput the id number for the restaurant you wish to select:\n");
                 int input = -1;
                 try
                 {
-                    input = Convert.ToInt32(Console.ReadLine());
+                    input = inOut.ReadInteger();
                 }
                 catch (Exception ex)
                 {
@@ -222,6 +213,11 @@ namespace Client
                 }
             }
 
+        }
+        private void Quit()
+        {
+            inOut.Output("See ya later folks!");
+            isYouFinishedOrIsYouDone = true;
         }
 
 

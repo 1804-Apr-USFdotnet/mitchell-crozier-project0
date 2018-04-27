@@ -21,7 +21,7 @@ namespace Services
             config.LoggingRules.Add(new NLog.Config.LoggingRule("*", LogLevel.Info, logconsole));
             config.LoggingRules.Add(new NLog.Config.LoggingRule("*", LogLevel.Debug, logfile));
 
-            NLog.LogManager.Configuration = config;
+            LogManager.Configuration = config;
 
         }
         public void Log(Exception e)

@@ -22,7 +22,7 @@ namespace Services
         }
         public List<RestaurantInfo> GetAllRestaurantInfo()
         {
-            Console.WriteLine(restaurantRepository.getAll());
+           
             return restaurantRepository.getAll().ToList();
         }
 

@@ -7,16 +7,18 @@ using System.Threading.Tasks;
 
 namespace Operations
 {
-   public  class TopThreeQuery
+   public class TopThreeQuery
     {
         private const int numOfTopRestaurants = 3;
         public Dictionary<RestaurantInfo, double> GetTopThreeRated(IEnumerable<RestaurantInfo> restuarants, IEnumerable<ReviewerInfo> reviewsList)
-        {            
+        {    
+            //Shout out to my boi Rafael for the crazy linq command
+
             var results = reviewsList.GroupBy(x => x.restaurantId,
                 x => new { x.restaurantId, x.Rating }).Join(restuarants, x => x.Key, y => y.restaurantId,
                 (x, y) => new { RestaurantInfo = y, AvgRating = x.Average(s => s.Rating) });
 
-            Console.WriteLine(results);
+            
             results.ToDictionary(t => t.RestaurantInfo, t => t.AvgRating);
             double one = 0, two = 0, three = 0;
             RestaurantInfo resOne = null, resTwo = null, resThree = null;

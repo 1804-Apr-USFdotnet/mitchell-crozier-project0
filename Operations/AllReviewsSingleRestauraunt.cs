@@ -12,27 +12,19 @@ namespace Operations
         public Dictionary<ReviewerInfo, RestaurantInfo> GetAllReviews(string name, List<RestaurantInfo> restaurants, IEnumerable<ReviewerInfo> reviews)
         {
             Dictionary<ReviewerInfo, RestaurantInfo> results = new Dictionary<ReviewerInfo, RestaurantInfo>();
-            int count = 0;
+            
             foreach (var review in reviews)
             {
-                Console.WriteLine("test");
                 foreach (var restaurant in restaurants)
                 {
-                    if(restaurant.restaurantId == review.restaurantId && restaurant.RestaurantName == name)
+                    if (restaurant.restaurantId == review.restaurantId && restaurant.RestaurantName == name)
                     {
-                        
-                        
-                            results.Add(review, restaurant);
-                    
-                        
-                       
-                        
+                        results.Add(review, restaurant);
                     }
                 }
-               
             }
             return results;
         }
-    }      
-}   
+    }
+}
 
