@@ -37,7 +37,7 @@ namespace Client
 
             builder.RegisterType<ReviewerService>().As<IReviewService>();
 
-            builder.RegisterType<Queries>().As<IQueries>();
+            //builder.RegisterType<Queries>().As<IQueries>();
 
             builder.RegisterType<Application>().As<IApplication>();
 

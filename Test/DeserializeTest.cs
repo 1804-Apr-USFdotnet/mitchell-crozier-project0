@@ -14,15 +14,24 @@ namespace Test
     class DeserializeTest
     {
         [TestCase]
-        public void TestDeserializeSingleObjectFromFile()
+        public void TestDeserializeSingleRestaurantFromFile()
         {
-            RestaurantInfo restaurant;
+            RestaurantInfo restaurant = null;
 
             //Arrange
-            using (StreamReader file = File.OpenText(@"C:\Users\Raptor\Downloads\singleRestaurantJson.json"))
+            try
             {
-                JsonSerializer serializer = new JsonSerializer();
-                restaurant = (RestaurantInfo)serializer.Deserialize(file, typeof(RestaurantInfo));
+                using (StreamReader file = File.OpenText(@"C:\Users\Raptor\Downloads\singleRestaurantJson.json"))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    restaurant = (RestaurantInfo)serializer.Deserialize(file, typeof(RestaurantInfo));
+                }
+            } catch(FileNotFoundException e)
+            {
+                Assert.Fail("File not found");
+            } catch (Exception e)
+            {
+                Assert.Fail("Cannot deserialize into the object type");
             }
             //Act
             int actual = restaurant.restaurantId;
@@ -33,17 +42,59 @@ namespace Test
         }
 
         [TestCase]
-        public void TestDeserializeMultipleObjectsFromFile()
+        public void TestDeserializeMultipleRestaurantsFromFile()
         {
-            List<RestaurantInfo> restaurants;
+            List<RestaurantInfo> restaurants = null;
 
             //Arrange
-            using (StreamReader file = File.OpenText(@"C:\Users\Raptor\Downloads\restaurantJson.json"))
+            try
             {
-                restaurants = JsonConvert.DeserializeObject<List<RestaurantInfo>>(File.ReadAllText(@"C:\Users\Raptor\Downloads\restaurantJson.json"));
+                using (StreamReader file = File.OpenText(@"C:\Users\Raptor\Downloads\restaurantJson.json"))
+                {
+                    restaurants = JsonConvert.DeserializeObject<List<RestaurantInfo>>(File.ReadAllText(@"C:\Users\Raptor\Downloads\restaurantJson.json"));
+                }
+            }
+            catch (FileNotFoundException e)
+            {
+                Assert.Fail("File not found");
+            }
+            catch (Exception e)
+            {
+                Assert.Fail("Cannot deserialize into the object type");
             }
             //Act
             int actualCount = restaurants.Count;
+            int expectedCount = 2;
+
+            //Assert
+            Assert.Greater(actualCount, expectedCount);
+        }
+
+        
+
+        [TestCase]
+        public void TestDeserializeMultipleReviewsFromFile()
+        {
+            List<ReviewerInfo> reviews = null;
+
+            //Arrange
+            try
+            {
+                using (StreamReader file = File.OpenText(@"C:\Users\Raptor\Downloads\reviewerJson.json"))
+                {
+                    reviews = JsonConvert.DeserializeObject<List<ReviewerInfo>>(File.ReadAllText(@"C:\Users\Raptor\Downloads\restaurantJson.json"));
+                }
+            }
+            catch (FileNotFoundException e)
+            {
+                Assert.Fail("File not found");
+            }
+            catch (Exception e)
+            {
+                Assert.Fail("Cannot deserialize into the object type");
+            }
+            //Act
+            int actualCount = reviews.Count;
             int expectedCount = 2;
 
             //Assert
