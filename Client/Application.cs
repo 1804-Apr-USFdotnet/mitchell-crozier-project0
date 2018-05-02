@@ -136,6 +136,11 @@ namespace Client
 
         private void TopThreeRatedRestaurants()
         {
+            string[] test = { "test", "lame", "dumb", "std" };
+            string[] test2 = { "lol", "ha", "ok", "absolutely", "ridiculous" };
+            var restut = test.Union(test2).Where(x => x.Length < 5).OrderBy(x => x.Length).Union(test).Reverse();
+            Console.WriteLine(restut);
+            Console.WriteLine();
             Console.WriteLine("Top three rated \n");
             var results = restaurantService.TopThreeRatedRestaurants();
             inOut.Output(results);
